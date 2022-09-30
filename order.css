@@ -1,0 +1,59 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+  }
+  .text-box {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 130px;
+  }
+  h5{
+    color: #00ff26;
+  }
+  .text-box h1 {
+    font-size: 40px;
+  }
+  .text-box i {
+    font-size: 54px;
+    padding: 15px;
+    color: #fff;
+  }
+  .hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .hero-btn:hover {
+    border: 1px solid #444444;
+    background: #444444;
+    transition: 1s;
+    border-radius: 4px;
+  }
+  /* media querys */
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 0px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .text-box h1{
+    font-size: 20px;
+  }
+  .hero-btn{
+    font-size: 10px;
+  }
+  .text-box i{
+    font-size: 40px;
+  }
+}

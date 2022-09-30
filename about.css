@@ -1,0 +1,327 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  background-color: #171717;
+}
+.header {
+  min-height: 150vh;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/titanium.jpg) center/cover repeat;
+  font-size: 17px;
+}
+nav {
+  display: flex;
+  padding: 20px 50px;
+  justify-content: space-between;
+}
+nav img {
+  width: 100px;
+}
+img {
+  width: 100%;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 32px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 0.5px;
+  background: #fff;
+  display: block;
+  margin-right: auto;
+  transition: 0.7s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+nav .fa {
+  display: none;
+}
+.container img {
+  width: 400px;
+  border: 2px solid #fff;
+  margin-right: 20px;
+  float: right;
+}
+.f-title {
+  color: #fff;
+}
+.container p {
+  color: #fff;
+  line-height: 1.6em;
+  font-family: "Poppins", sans-serif;
+}
+.container1 img {
+  width: 400px;
+  border: 2px solid #fff;
+  margin-right: 20px;
+  float: left;
+}
+.container1 p {
+  margin-top: 20px;
+  color: #fff;
+  line-height: 1.6em;
+  font-family: "Poppins", sans-serif;
+}
+.l-title {
+  color: #fff;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  background-color: #171717;
+  color: #fff;
+}
+.fotter2 {
+  width: 100%;
+  color: #fff;
+  background-color: #171717;
+}
+.fotter2 img {
+  width: 50px;
+  position: relative;
+  left: 730px;
+  top: 20px;
+}
+.nav-links li:last-child {
+  background-color: #343434;
+  padding: 10px;
+  border-radius: 15px;
+}
+i {
+  color: #fff;
+  padding: 15px;
+}
+i:hover {
+  color: #8e644d;
+  font-size: 23px;
+  transition: 0.7s;
+}
+.pages a {
+  color: #fff;
+  text-decoration: none;
+  padding: 3px;
+}
+.pages a:hover {
+  text-decoration: underline;
+  transition: 1s;
+}
+.col {
+  padding: 80px 20px;
+}
+.row a {
+  text-decoration: none;
+}
+.row a p {
+  color: #6e6e6e;
+  text-decoration: none;
+  border: 2px solid #6e6e6e;
+  padding: 10px;
+  width: 150px;
+}
+.row a p:hover {
+  color: #fff;
+  transition: 0.7s;
+  border-color: #fff;
+}
+.product .row {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  color: #fff;
+  border: none;
+}
+.product .col h1{
+  font-size: 27px;
+}
+.product span{
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  nav img {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .fotter2 img {
+    display: none;
+  }
+  .container,
+  .container1 p,
+  h1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .container1 img {
+    width: 300px;
+  }
+  .container img {
+    width: 300px;
+  }
+  .header nav img {
+    position: relative;
+    top: 40px;
+  }
+  .product,
+  .container,
+  .container1 p,
+  h1 {
+    flex-direction: column;
+    text-align: center;
+    display: block;
+  }
+  .product .row {
+    width: unset;
+    margin: unset;
+    display: unset;
+  }
+  .row a p{
+    display: none;
+  }
+}
+
+/* media querys */
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 0px) and (max-device-width: 479px) and (-webkit-min-device-pixel-ratio: 2) {
+  img {
+    margin: 0;
+  }
+  .product {
+    position: unset;
+    display: block;
+  }
+  .container img {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    float: none;
+  }
+  .container p {
+    width: 100%;
+  }
+  .container1 img {
+    width: 100%;
+  }
+  img {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .text-box {
+    font-size: 10px;
+  }
+  .fotter2 img {
+    display: none;
+  }
+  .row a p{
+    display: none;
+  }
+  .product .col h1{
+    padding-top: 20px;
+  }
+  .product,
+  .container,
+  .row,
+  .col, p ,
+  h1 {
+    flex-direction: column;
+    text-align: center;
+    display: block;
+  }
+}
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 769px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+  .text-box h1 {
+    font-size: 30px;
+  }
+  .fotter2 img {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  .text-box h1 {
+    font-size: 30px;
+  }
+  .fotter2 img {
+    display: none;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .text-box h1 {
+    font-size: 30px;
+  }
+  .fotter2 img {
+    display: none;
+  }
+  img {
+    margin: 0;
+  }
+  .container img {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    float: none;
+  }
+  .container p {
+    width: 100%;
+  }
+  .container1 img {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1921px) {
+  .text-box h1 {
+    font-size: 30px;
+  }
+  .fotter2 img {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1922px) and (max-width: 2560px) {
+  .product .row {
+    width: unset;
+    margin: unset;
+    display: unset;
+  }
+  .nav-links {
+    size: 20px;
+  }
+  .text-box h1 {
+    font-size: 50px;
+  }
+  .footer {
+    font-size: 29px;
+  }
+  .fotter2 img {
+    display: none;
+  }
+}

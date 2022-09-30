@@ -1,0 +1,152 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  background-color: #1d1d1d;
+  color: #fff;
+}
+.header{
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 10px 13px 1px rgba(0,0,0,0.75);
+}
+nav {
+  display: flex;
+  padding: 20px 50px;
+  justify-content: space-between;
+  background-color: #171717;
+}
+nav img {
+  width: 100px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 32px 12px;
+}
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background: #fff;
+  display: block;
+  margin-right: auto;
+  transition: 0.7s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+nav .fa {
+  display: none;
+}
+#product1 {
+  text-align: center;
+}
+#product1 .pro {
+  width: 270px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+#product1 .pro img {
+  width: 100%;
+  border-radius: 15px;
+}
+#product1 .pro .des h5 {
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 24px;
+}
+#product1 .pro-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px 30px 30px 30px;
+}
+.pro-container a {
+  flex-basis: 25%;
+}
+#product1 .pro:hover {
+  background-color: #272727;
+  transition: 1s;
+  box-shadow: 0px 0px 42px 1px rgba(0, 0, 0, 0.7);
+}
+#product1 h2 {
+  font-size: 35px;
+}
+#product1 p {
+  font-size: 20px;
+}
+.title{
+  padding: 10px;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  background-color: #171717;
+  color: #fff;
+}
+.fotter2 {
+  width: 100%;
+  color: #fff;
+  background-color: #171717;
+}
+.fotter2 img {
+  width: 50px;
+  position: relative;
+  left: 730px;
+  top: 20px;
+}
+i {
+  color: #fff;
+  padding: 15px;
+}
+.video video {
+  width: 100%;
+}
+.nav-links li:last-child{
+  background-color: #6495ed;
+  padding: 10px;
+  border-radius: 15px;
+}
+i:hover {
+  color: #6495ed;
+  font-size: 23px;
+  transition: 0.7s;
+}
+.pages a {
+  color: #fff;
+  text-decoration: none;
+  padding: 3px;
+}
+.pages a:hover {
+  text-decoration: underline;
+  transition: 1s;
+}
+@media only screen and (min-device-width: 0px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+  body{
+    padding: 0;
+    margin: 0;
+    flex-wrap: unset;
+  }
+  #product1 .pro-container .pro{
+    text-align: center;
+  }
+  .header{
+    position: unset;
+  }
+}
